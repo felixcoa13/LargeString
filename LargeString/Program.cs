@@ -6,7 +6,10 @@ namespace LargeString
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var input = Utils.ReadInputFile("Input.txt");
+            Utils.Print(input);
+            var result = Logic.GetMaxRecurringLetter(input);
+            Console.WriteLine($"\nResult: {result}");
         }
     }
 }
